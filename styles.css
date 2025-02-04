@@ -1,60 +1,60 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     color: white;
 }
 
-.container {
-    margin-top: 50px;
-}
-
 h1 {
-    font-size: 32px;
+    margin-top: 20px;
+    font-size: 2.5rem;
 }
 
-#gameBoard {
+.board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     margin: 20px auto;
-    width: 310px;
+    width: 330px;
 }
 
 .cell {
+    width: 100px;
+    height: 100px;
     background: white;
     color: black;
-    font-size: 36px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
 }
 
 .cell:hover {
     transform: scale(1.1);
-    background: #ffe4e1;
+    background: lightgray;
 }
 
 button {
-    margin-top: 20px;
     padding: 10px 20px;
-    border: none;
-    background: #ff3b3b;
+    font-size: 1rem;
+    background: #333;
     color: white;
-    font-size: 18px;
-    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background: #ff1e1e;
+    background: #555;
 }
 
 footer {
-    margin-top: 30px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
 }
